@@ -21,7 +21,7 @@ export const paypalCheckPayment = async (paypalTransactionId: string) => {
   }
   // Todo: Actualizar orden a pagado
   try {
-    console.log({ status, purchase_units })
+    // console.log({ status, purchase_units })
     await prisma.order.update({
       where: { id: orderId },
       data: {
