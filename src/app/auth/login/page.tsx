@@ -1,10 +1,12 @@
-import { titleFont } from "@/config/fonts";
+import { titleFont } from '@/config/fonts'
+import { LoginForm } from './ui/LoginForm'
 
-export default function Home() {
+export default function LoginPage() {
   return (
-    <div className=''>
-      <h1>Login Page</h1>
-      <h1 className={`${titleFont.className} font-bold`}>Mundo Hola!!</h1>
+    <div className='flex flex-col min-h-screen pt-32 sm:pt-52'>
+      <h1 className={`${titleFont.className} text-4xl mb-5`}>Ingresar</h1>
+
+      <LoginForm />
     </div>
   )
 }
